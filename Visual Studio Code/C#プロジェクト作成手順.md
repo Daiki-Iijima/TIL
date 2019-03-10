@@ -1,4 +1,4 @@
-#　.NET Core SDK をインストール
+# .NET Core SDK をインストール
 https://www.microsoft.com/net/download
 
 #　コンソールでプロジェクト作成
