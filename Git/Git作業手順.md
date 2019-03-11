@@ -10,10 +10,10 @@
 作業ブランチへ移動
 
 # 作業、テスト、コミット
-'''
+```
 git add .
 git commit
-'''
+```
 
 # git checkout master
 
