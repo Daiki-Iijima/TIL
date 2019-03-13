@@ -20,6 +20,23 @@ I can do it を送信する
 
 データ部を8ビットなのでまずは8ビットに変換する
 
+```C#
+
+string st = ICANDOIT;
+
+byte[] stbytes = System.Text.Encoding.ASCII.GetBytes(st);
+
+int sum = 0;
+
+forech(byte data in stbytes)
+{
+    sum += data;
+}
+
+string CheckSum = sum.ToString(X2);
+
+```
+
 
 # 参考
 - Wiki
