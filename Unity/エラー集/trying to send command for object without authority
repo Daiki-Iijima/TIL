@@ -1,0 +1,4 @@
+#発生条件
+Sharing中にクラインとからスポーンさせたオブジェクトを動かそうとした時
+#解決策
+Network Identityの[Local Player Authority]にチェック
