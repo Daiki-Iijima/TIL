@@ -30,5 +30,6 @@ var name = 1000;
 [Microsoftの見解]( https://docs.microsoft.com/ja-jp/dotnet/csharp/programming-guide/classes-and-structs/implicitly-typed-local-variablesZ )
 
 - 結論
+
 積極的に利用していこう
 しかし、個人やチーム内で何かルールや心に決めていることがあれば無理に使用する必要はない
