@@ -27,7 +27,7 @@ var name = 1000;
 
 # 暗黙的な型指定(var)と明示的な型(int,string,etc...)どちらを優先すればいいのか
 
-[Microsoftの見解]https://docs.microsoft.com/ja-jp/dotnet/csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables
+[Microsoftの見解]( https://docs.microsoft.com/ja-jp/dotnet/csharp/programming-guide/classes-and-structs/implicitly-typed-local-variablesZ )
 
 - 結論
 積極的に利用していこう
