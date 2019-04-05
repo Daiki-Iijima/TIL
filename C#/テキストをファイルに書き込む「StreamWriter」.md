@@ -43,7 +43,9 @@ using (var writer = new StreamWriter(@"c:¥data¥data.log"))  //1
 
 1. Disposeメソッド(IDisposableインターフェイス)を実装しているオブジェクトのみ使える
 
-2. 複数のリソースを宣言することも可能
+2. ファイルを確実に閉じることができるのでリソースを握り続けない
+
+3. 複数のリソースを宣言することも可能
 
    ```c#
    using (var writer = new StreamWriter(@"c:¥data¥data.log"))
