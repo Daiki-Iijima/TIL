@@ -1,0 +1,35 @@
+# メソッドのオーバーライド
+- 基底クラスのメンバーを再定義する仕組み
+- 基底クラスでは「virtual修飾子」で再定義可能にするメソッドを定義
+- 派生クラスでは「override修飾子」で再定義メソッドを定義
+- 「virtual修飾子」「override修飾子」はオーバーライドのセット
+
+```c#
+
+//基底クラス
+public class A
+{
+  public virtual void Show()
+  {
+    Console.WriteLine("私はAです")
+  }
+}
+
+public class B : A
+{
+  public override void Show()
+  {
+    Console.WriteLine("私はBです")
+  }
+
+  static Main(string[] args)
+  {
+    var b = new B();
+    b.Show();
+
+    //結果 : 私はBです
+  }
+}
+```
+
+- 「virtual修飾子」をつけたメソッドを仮想メソッドという
