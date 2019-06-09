@@ -189,6 +189,16 @@
   ```
   docker image rm 消去したいID or iamge Name
   ```
+  
+- image Nameで消去したい場合TAGのバージョン？まで記述しないとダメらしい
+  
+  |REPOSITORY|TAG|
+  |---|---|
+  |node|6.9.1|
+  
+  ```
+  docker image rm node:6.9.1 
+  ```
 
 - こんなんでたらOK
 
