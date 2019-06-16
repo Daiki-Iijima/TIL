@@ -120,16 +120,85 @@
    ```
    apt-get vim
    ```
-
-### rails下準備
-
-1. railsを導入する前にnode.jsをインストールしておく(railsはnode.jsを必要とするため)
-
-   ```
    
-   ```
-
    
 
+### rails導入
 
+1. Gemfileを作成
 
+   ```
+   vim Gemfile
+   ```
+   
+   - 中身
+   
+     ```
+     source 'https://rubygems.org'
+     gem 'rails', '5.1.6'
+     ```
+2. bundle経由でインストール
+
+   ```
+   bundle install
+   ```
+   
+3. インストールできたか確認
+
+   ```
+   rails -v
+   ```
+   
+### railsの初期化
+
+1. 初期化
+
+   ```
+   rails new .
+   ```
+
+2. 初期化できたか確認
+
+     ```
+     ls
+     ```
+     
+     - 色々できてればok
+     
+       ```
+       Gemfile  Gemfile.lock  README.md
+       Rakefile  app  bin  config  config.ru
+       db  lib  log  package.json  public 
+       test  tmp  vendor
+       ```
+   
+### railsサーバーの起動
+
+1. railsでサーバーを起動する前にnode.jsをインストールしておく(railsはnodejsをコンパイルで使用しているため)
+
+   ```
+   apt-get install -y nodjs
+   ```
+   
+2. サーバーを起動
+
+   ```
+   rails server -d
+   ```
+
+3. サーバー停止
+
+   ```
+   cat tmp/pids/server.pid
+   
+   [出力:3桁ぐらいの数字]
+   
+   kill 出力された数字
+   ```
+   
+
+# コンテナを抜ける
+
+```
+exit
+```
