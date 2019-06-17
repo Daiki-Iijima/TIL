@@ -191,8 +191,9 @@
    ```
    cat tmp/pids/server.pid
    
-   [出力:3桁ぐらいの数字]
+   xxxxroot@zzzzzz /app#
    
+   になるのでxxxx部分の数字を入れる
    kill 出力された数字
    ```
    
