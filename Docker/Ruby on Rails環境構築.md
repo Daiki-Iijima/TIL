@@ -118,7 +118,7 @@
 2. Vimを導入
 
    ```
-   apt-get vim
+   apt-get install vim
    ```
    
    
