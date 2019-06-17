@@ -177,7 +177,7 @@
 1. railsでサーバーを起動する前にnode.jsをインストールしておく(railsはnodejsをコンパイルで使用しているため)
 
    ```
-   apt-get install -y nodjs
+   apt-get install -y nodejs
    ```
    
 2. サーバーを起動
