@@ -1,7 +1,8 @@
 @charset "utf-8";
 body{
-    font-size:90%;
-    font-family: "MS ゴシック",sans-serif;
-    line-height: 1;
+    font-size:90%; /*文字サイズ*/
+    font-family: "MS ゴシック",sans-serif; /*フォント*/
+    line-height: 1;/*行高さ*/
+    color:rgb(0, 0, 0) /*文字色*/
 }
 
