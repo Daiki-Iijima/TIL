@@ -28,6 +28,17 @@
     vcpkg integrate install
     ```
 
+- こんなの出ればOK
+    ```c#
+    Applied user-wide integration for this vcpkg root.
+
+    All MSBuild C++ projects can now #include any installed libraries.
+    Linking will be handled automatically.
+    Installing new libraries will make them instantly available.
+
+    CMake projects should use: "-DCMAKE_TOOLCHAIN_FILE=D:/vcpkg/scripts/buildsystems/vcpkg.cmake"
+    ```
+
 # ３.使用したいライブラリをインストール
 
 ```c#
