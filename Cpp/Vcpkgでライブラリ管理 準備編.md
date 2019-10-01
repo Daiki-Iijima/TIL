@@ -54,3 +54,11 @@ Could not locate a complete toolset.
 ```
 
 - Visual Studioに英語言語パックをインストールする
+
+# 参考
+- 公式README
+
+    https://github.com/microsoft/vcpkg
+
+- 詳しく書いてあった
+    https://qiita.com/jugemjugemu/items/fcb72bdca13dc06b0f37
