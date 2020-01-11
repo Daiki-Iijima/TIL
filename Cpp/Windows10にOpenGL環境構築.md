@@ -3,8 +3,6 @@
 # freeGLUTをダウンロード
 http://freeglut.sourceforge.net/index.php#download
 
-- いいところに解答
-
 # CMakeをインストール
 
 1. 公式サイトからインストーラをダウンロード
