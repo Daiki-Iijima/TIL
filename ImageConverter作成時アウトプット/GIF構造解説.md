@@ -12,9 +12,24 @@
 
 - Trailerは必ず「0x3B」アスキー文字(;)
 
+# Header
+シグネチャとバージョンが記述されている
+
+## シグネチャ(3byte)
+```0x47(G) 0x49(I) 0x46(F)```
+
+## バージョン(3byte)
+|バージョン|組み合わせ|
+|---|---|
+|87a|```0x38 0x37 0x61```|
+|89a|```0x38 0x37 0x61```|
+
+# Logical Screen Descriptor
+
+
 # Version 89aの追加ブロック
 
-- 先頭 2バイトで判断できる
+先頭 2バイトで判断できる
 
   - 「0x21」「0x??」
 
@@ -25,3 +40,14 @@
     | 01               | Plain Text Extension       |
     | FF               | Application Extension      |
 
+# Graphic Controll Extension(8 Byte)
+
+|情報名|サイズ|固定値の場合のコード|概要|
+|---|---|---|---|
+|Extension Introducer|1 Byte|0x21|拡張ブロック判定|
+|Graphic Control Label|1 Byte|0xf9|Graphic Control Extensionの判定|
+|Block Size|1 Byte|0x04|この拡張ブロックのサイズ|
+|Transparent Color Flag|1 Byte|0x01 or 0x00|行う or 行わない|
+|Delay Time|2 Byte|-|表示する際の値遅延(1/100)|
+|Transparent Color Index|1 Byte|-|透過する色のインデックス|
+|Block Terminator|1 Byte|0x00|ブロック並びの終わり|
