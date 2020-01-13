@@ -51,3 +51,12 @@
 |Delay Time|2 Byte|-|表示する際の値遅延(1/100)|
 |Transparent Color Index|1 Byte|-|透過する色のインデックス|
 |Block Terminator|1 Byte|0x00|ブロック並びの終わり|
+
+# 参考
+基本構造
+
+http://www.tohoho-web.com/wwwgif.htm
+
+圧縮アルゴリズム
+
+https://nodamushi.hatenablog.com/entry/20090531/1243775161
