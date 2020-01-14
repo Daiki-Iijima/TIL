@@ -60,3 +60,5 @@ http://www.tohoho-web.com/wwwgif.htm
 圧縮アルゴリズム
 
 https://nodamushi.hatenablog.com/entry/20090531/1243775161
+
+http://bttb.s1.valueserver.jp/wordpress/blog/2018/12/23/gif-lzw-comp/
