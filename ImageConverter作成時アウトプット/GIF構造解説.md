@@ -1,20 +1,24 @@
+# 使用される色数
+2、4、8、16、32、64、128、256
+
+# 画像縦横サイズ
+1×1 ~ 563663
+
 # GIF構造
 
-|ブロック名|有無|サイズ(Byte)|
-|---|---|---|
-|Header|○|6|
-|Logical Screen Descriptor|○|7|
-|Global Color Table| 「Logical Screen Descriptor」内のフラグが立っているか|0~?|
-|Image Descripotr|○|10|
+|ブロック名|有無|サイズ(Byte)|概要|
+|---|---|---|---|
+|Header|○|6| 「シグネチャ」「バージョン」が記述されている|
+|Logical Screen Descriptor|○|7|画面へ表示する際の情報|
+|Global Color Table| 「Logical Screen Descriptor」内のフラグが立っているか|0~?|画像ないで使用されるパレット情報|
+| Image Descripotr |○|10|イメージブロックの情報|
 |Local Color Table|「Image Descriptor」内のフラグが立っているか|0~?|
-|Table Base Image Data|○|2~?|
+|Table Base Image Data|○|2~?|画像のデータ本体(LZW圧縮されている)|
 |Trailer|○|1|
 
 - Trailerは必ず「0x3B」アスキー文字(;)
 
 # Header(6Byte)
-シグネチャとバージョンが記述されている
-
 ## シグネチャ(3byte)
 ```0x47(G) 0x49(I) 0x46(F)```
 
@@ -25,15 +29,11 @@
 |89a|```0x38 0x37 0x61```|アニメーション・透過|
 
 # Logical Screen Descriptor(7Byte)
-## 画像の縦幅(2Byte)
-
-## 画像の横幅(2Byte)
-
-## その他の情報4種類(1Byte(Bitフラグ))
-
-## 背景色パレットインデックス(1Byte)
-
-## ピクセル縦横比(1Byte)
+- 画像の縦幅(2Byte)
+- 画像の横幅(2Byte)
+- その他の情報4種類(1Byte(Bitフラグ))
+- 背景色パレットインデックス(1Byte)
+- ピクセル縦横比(1Byte)
 
 # Version 89aの追加ブロック
 
